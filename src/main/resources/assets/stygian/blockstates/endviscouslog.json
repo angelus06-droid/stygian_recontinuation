@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y":  { "model": "stygian:endviscouslog" },
+    "axis=z":  { "model": "stygian:endviscouslog", "x": 90 },
+    "axis=x":  { "model": "stygian:endviscouslog", "y": 90, "z": 90 }
+  }
+}

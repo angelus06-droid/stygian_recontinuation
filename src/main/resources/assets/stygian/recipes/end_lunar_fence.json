@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"PSP",
+		"PSP"
+	],
+	"key": {
+		"P": {
+			"item": "stygian:endastroplanks"
+		},
+		"S": {
+			"type": "forge:ore_dict",
+			"ore": "stickWood"
+		}
+	},
+	"result": {
+		"item": "stygian:endastrofence",
+		"count": 3
+	}
+}

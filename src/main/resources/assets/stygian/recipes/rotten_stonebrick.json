@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SS",
+		"SS"
+	],
+	"key": {
+		"S": {
+			"item": "stygian:enddeadstone"
+		}
+	},
+	"result": {
+		"item": "stygian:enddeadstonebrick",
+		"count": 4
+	}
+}

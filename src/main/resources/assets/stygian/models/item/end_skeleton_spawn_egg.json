@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "stygian:item/end_skeleton_spawn_egg"
+    }
+}

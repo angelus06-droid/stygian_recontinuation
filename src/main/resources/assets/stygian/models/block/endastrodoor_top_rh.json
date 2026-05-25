@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top_rh",
+    "textures": {
+        "bottom": "stygian:block/endastrodoor_bottom",
+        "top": "stygian:block/endastrodoor_top"
+    }
+}

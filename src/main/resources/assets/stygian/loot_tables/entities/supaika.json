@@ -1,0 +1,103 @@
+{
+    "pools": [
+        {
+            "name": "guaranteed_reward",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "stygian:ancient_essence",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": { "min": 1, "max": 1 }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "guaranteed_drops",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "stygian:endbone",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": { "min": 12, "max": 24 }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": { "min": 2, "max": 6 }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:bone",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": { "min": 6, "max": 12 }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": { "min": 1, "max": 3 }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "combat_materials",
+            "rolls": 2,
+            "bonus_rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "stygian:blastling_ball",
+                    "weight": 50,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": { "min": 8, "max": 16 }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "rare_treasures",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:diamond",
+                    "weight": 15,
+                    "functions": [
+                        { "function": "set_count", "count": { "min": 1, "max": 3 } }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:enchanted_book",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "enchant_randomly",
+                            "enchantments": [
+                                "minecraft:sharpness",
+                                "minecraft:knockback",
+                                "minecraft:unbreaking"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

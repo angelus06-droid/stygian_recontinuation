@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"PP",
+		"PP",
+		"PP"
+	],
+	"key": {
+		"P": {
+			"item": "stygian:endviscousplanks"
+		}
+	},
+	"result": {
+		"item": "stygian:endviscousdoor",
+		"count": 3
+	}
+}

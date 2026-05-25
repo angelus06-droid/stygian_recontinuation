@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y":  { "model": "stygian:endastrolog" },
+    "axis=z":  { "model": "stygian:endastrolog", "x": 90 },
+    "axis=x":  { "model": "stygian:endastrolog", "y": 90, "z": 90 }
+  }
+}

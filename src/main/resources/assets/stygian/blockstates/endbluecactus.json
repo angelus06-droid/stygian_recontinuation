@@ -1,0 +1,7 @@
+{
+  "forge_marker": 1,
+  "variants": {
+        "normal": { "model": "stygian:endbluecactus" },
+        "inventory": { "model": "stygian:item/endbluecactus" }
+    }
+}

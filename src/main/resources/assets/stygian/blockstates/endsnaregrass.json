@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "normal": [
+      { "model": "stygian:endsnaregrass" },
+      { "model": "stygian:endsnaregrass", "y": 90 },
+      { "model": "stygian:endsnaregrass", "y": 180 },
+      { "model": "stygian:endsnaregrass", "y": 270 }
+    ]
+  }
+}

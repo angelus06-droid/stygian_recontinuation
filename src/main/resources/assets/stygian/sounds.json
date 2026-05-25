@@ -1,0 +1,256 @@
+{
+	"entity.watchling.idle": {
+    "sounds": [
+      "stygian:watchling/idle1",
+      "stygian:watchling/idle2",
+      "stygian:watchling/idle3",
+      "stygian:watchling/idle4"
+    ]
+  },
+    "entity.watchling.hurt": {
+    "sounds": [
+      "stygian:watchling/hurt1",
+      "stygian:watchling/hurt2",
+      "stygian:watchling/hurt3",
+      "stygian:watchling/hurt4",
+	  "stygian:watchling/hurt5",
+      "stygian:watchling/hurt6"
+    ]
+  },
+    "entity.watchling.death": {
+    "sounds": [
+      "stygian:watchling/death1",
+      "stygian:watchling/death2",
+      "stygian:watchling/death3",
+      "stygian:watchling/death4",
+	  "stygian:watchling/death5"
+    ]
+  },
+    "entity.watchling.step": {
+    "sounds": [
+      "stygian:watchling/step1",
+      "stygian:watchling/step2",
+      "stygian:watchling/step3",
+      "stygian:watchling/step4",
+	  "stygian:watchling/step5"
+    ]
+  },
+    "entity.watchling.attack": {
+    "sounds": [
+      "stygian:watchling/attack1",
+      "stygian:watchling/attack2",
+      "stygian:watchling/attack3",
+      "stygian:watchling/attack4",
+	  "stygian:watchling/attack5",
+	  "stygian:watchling/attack6"
+    ]
+  },
+  	"entity.blastling.idle": {
+    "sounds": [
+      "stygian:blastling/idle1",
+      "stygian:blastling/idle2",
+      "stygian:blastling/idle3",
+      "stygian:blastling/idle4"
+    ]
+  },
+    "entity.blastling.hurt": {
+    "sounds": [
+      "stygian:blastling/hurt1",
+      "stygian:blastling/hurt2",
+      "stygian:blastling/hurt3",
+      "stygian:blastling/hurt4",
+	  "stygian:blastling/hurt5",
+      "stygian:blastling/hurt6"
+    ]
+  },
+    "entity.blastling.death": {
+    "sounds": [
+      "stygian:blastling/death1",
+      "stygian:blastling/death2",
+      "stygian:blastling/death3",
+      "stygian:blastling/death4",
+	  "stygian:blastling/death5",
+	  "stygian:blastling/death6"
+    ]
+  },
+    "entity.blastling.step": {
+    "sounds": [
+      "stygian:blastling/step1",
+      "stygian:blastling/step2",
+      "stygian:blastling/step3",
+      "stygian:blastling/step4"
+    ]
+  },
+    "entity.blastling.shoot": {
+    "sounds": [
+      "stygian:blastling/shoot1",
+      "stygian:blastling/shoot2",
+      "stygian:blastling/shoot3",
+      "stygian:blastling/shoot4"
+    ]
+  },
+   "entity.blastling.bullet_land": {
+    "sounds": [
+      "stygian:blastling/bullet_land1",
+      "stygian:blastling/bullet_land2",
+      "stygian:blastling/bullet_land3",
+      "stygian:blastling/bullet_land4"
+    ]
+  },
+    "entity.snareling.idle": {
+    "sounds": [
+      "stygian:snareling/idle1",
+      "stygian:snareling/idle2",
+      "stygian:snareling/idle3",
+      "stygian:snareling/idle4"
+    ]
+  },
+    "entity.snareling.hurt": {
+    "sounds": [
+      "stygian:snareling/hurt1",
+      "stygian:snareling/hurt2",
+      "stygian:snareling/hurt3",
+      "stygian:snareling/hurt4",
+	  "stygian:snareling/hurt5",
+      "stygian:snareling/hurt6"
+    ]
+  },
+    "entity.snareling.death": {
+    "sounds": [
+      "stygian:snareling/death1",
+      "stygian:snareling/death2",
+      "stygian:snareling/death3",
+      "stygian:snareling/death4"
+    ]
+  },
+    "entity.snareling.step": {
+    "sounds": [
+      "stygian:snareling/step1",
+      "stygian:snareling/step2",
+      "stygian:snareling/step3",
+      "stygian:snareling/step4",
+      "stygian:snareling/step5",
+      "stygian:snareling/step6"	  
+    ]
+  },
+    "entity.snareling.attack": {
+    "sounds": [
+      "stygian:snareling/attack1",
+      "stygian:snareling/attack2",
+      "stygian:snareling/attack3",
+      "stygian:snareling/attack4",
+	  "stygian:snareling/attack5",
+	  "stygian:snareling/attack6"
+    ]
+  },
+    "entity.snareling.prepare_shoot": {
+    "sounds": [
+      "stygian:snareling/prepare_shoot1",
+      "stygian:snareling/prepare_shoot2",
+      "stygian:snareling/prepare_shoot3",
+      "stygian:snareling/prepare_shoot4"
+    ]
+  },
+    "entity.snareling.shoot": {
+    "sounds": [
+      "stygian:snareling/shoot1",
+      "stygian:snareling/shoot2",
+      "stygian:snareling/shoot3",
+      "stygian:snareling/shoot4"
+    ]
+  },
+    "entity.snareling.glob_land": {
+    "sounds": [
+      "stygian:snareling/glob_land1",
+      "stygian:snareling/glob_land2",
+      "stygian:snareling/glob_land3",
+      "stygian:snareling/glob_land4"
+    ]
+  },
+    "entity.pix.idle": {
+    "sounds": [
+      "stygian:pix/idle1"
+    ]
+  },
+	"entity.lunar_zorp.idle": {
+    "sounds": [
+      "stygian:lunar_zorp/idle1",
+      "stygian:lunar_zorp/idle2"
+    ]
+  },
+    "entity.lunar_zorp.hurt": {
+    "sounds": [
+      "stygian:lunar_zorp/hurt1",
+      "stygian:lunar_zorp/hurt2"
+    ]
+  },
+    "entity.lunar_zorp.death": {
+    "sounds": [
+      "stygian:lunar_zorp/death1",
+      "stygian:lunar_zorp/death2"
+    ]
+  },
+	"entity.supaika.idle": {
+    "sounds": [
+      "stygian:supaika/idle1"
+    ]
+  },
+	"entity.supaika.hurt": {
+    "sounds": [
+      "stygian:supaika/hurt1"
+    ]
+  },
+	"entity.supaika.death": {
+    "sounds": [
+      "stygian:supaika/death1"
+    ]
+  },
+  	"entity.endbob.idle": {
+    "sounds": [
+      "stygian:endbob/idle1"
+    ]
+  },
+    "entity.endbob.hurt": {
+    "sounds": [
+      "stygian:endbob/hurt1"
+    ]
+  },
+    "entity.endbob.death": {
+    "sounds": [
+      "stygian:endbob/death1"
+    ]
+  },
+	"entity.endwyrm.idle": {
+    "sounds": [
+      "stygian:endwyrm/idle1"
+    ]
+  },
+    "entity.endwyrm.hurt": {
+    "sounds": [
+      "stygian:endwyrm/hurt1",
+      "stygian:endwyrm/hurt2"
+    ]
+  },
+    "entity.endwyrm.death": {
+    "sounds": [
+      "stygian:endwyrm/death1"
+    ]
+  },
+	"entity.skipper.idle": {
+    "sounds": [
+      "stygian:skipper/idle1",
+      "stygian:skipper/idle2"
+    ]
+  },
+    "entity.skipper.hurt": {
+    "sounds": [
+      "stygian:skipper/hurt1"
+    ]
+  },
+    "entity.skipper.death": {
+    "sounds": [
+      "stygian:skipper/death1",
+      "stygian:skipper/death2"
+    ]
+  }
+}

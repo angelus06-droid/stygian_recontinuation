@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OPO",
+    "OHO",
+    "SHS"
+  ],
+  "key": {
+    "P": {
+      "item": "stygian:ancient_essence"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "H": {
+      "item": "stygian:endbone"
+    },
+    "S": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "stygian:supaika_bone",
+    "count": 1
+  }
+}

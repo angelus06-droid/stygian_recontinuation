@@ -1,0 +1,116 @@
+package fluke.stygian.block;
+
+import fluke.stygian.util.Reference;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockBush;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.material.MapColor;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.stats.StatList;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.NonNullList;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
+import javax.annotation.Nullable;
+import java.util.Random;
+
+public class BlockEndShiren extends BlockBush implements net.minecraftforge.common.IShearable
+{
+    protected static final AxisAlignedBB TALL_GRASS_AABB = new AxisAlignedBB(0.09999999403953552D, 0.0D, 0.09999999403953552D, 0.8999999761581421D, 0.800000011920929D, 0.8999999761581421D);
+    public static final String REG_NAME = "endshiren";
+
+    public BlockEndShiren() {
+    	super(Material.VINE, MapColor.CYAN);
+    	this.setSoundType(SoundType.PLANT);
+    	this.setLightLevel(0.8F);
+        setTranslationKey(Reference.MOD_ID + ".endshiren");
+
+        setRegistryName(REG_NAME);
+    }
+    
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+        return TALL_GRASS_AABB;
+    }
+    
+    @Override
+    public boolean canBlockStay(World worldIn, BlockPos pos, IBlockState state) {
+        if (state.getBlock() == this){ //Forge: This function is called during world gen and placement, before this block is set, so if we are not 'here' then assume it's the pre-check.
+            Block soil = worldIn.getBlockState(pos.down()).getBlock();
+            return soil == ModBlocks.endBlueCactus;
+        }
+        return canSustainBush(worldIn.getBlockState(pos.down()));
+    }
+
+    @Override
+    public boolean canPlaceBlockAt(World worldIn, BlockPos pos) {
+        if (worldIn.getBlockState(pos.down()).getBlock() == Blocks.FLOWER_POT) {
+            return false;
+        }
+        return super.canPlaceBlockAt(worldIn, pos);
+    }
+    
+    @Override
+    protected boolean canSustainBush(IBlockState state) {
+    	Block soil = state.getBlock();
+    	return soil == Blocks.END_STONE || soil == ModBlocks.endBlueCactus;
+    }
+    
+    public boolean isReplaceable(IBlockAccess worldIn, BlockPos pos) {
+        return true;
+    }
+    
+    public Item getItemDropped(IBlockState state, Random rand, int fortune) {
+        return null;
+    }
+    
+    public void harvestBlock(World worldIn, EntityPlayer player, BlockPos pos, IBlockState state, @Nullable TileEntity te, ItemStack stack) {
+        if (!worldIn.isRemote && stack.getItem() == Items.SHEARS) {
+            player.addStat(StatList.getBlockStats(this));
+            spawnAsEntity(worldIn, pos, new ItemStack(ModBlocks.endShiren, 1, 0));
+        } else {
+            super.harvestBlock(worldIn, player, pos, state, te, stack);
+        }
+    }
+    
+    public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
+        return new ItemStack(this, 1, 0);
+    }
+    
+    @Override public boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) {
+    	return true; 
+    }
+    
+    @Override
+    public NonNullList<ItemStack> onSheared(ItemStack item, IBlockAccess world, BlockPos pos, int fortune) {
+        return NonNullList.withSize(1, new ItemStack(ModBlocks.endShiren, 1, 0));
+    }
+
+    @Override
+    public boolean isFullCube(IBlockState state) {
+        return false;
+    }
+
+    @Override
+    public boolean isOpaqueCube(IBlockState state) {
+        return false;
+    }
+    
+    @SideOnly(Side.CLIENT)
+    public void initModel() {
+        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
+	}
+
+}

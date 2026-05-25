@@ -1,0 +1,7 @@
+{
+  "forge_marker": 1,
+  "variants": {
+        "normal": { "model": "stygian:endshiren" },
+        "inventory": { "model": "stygian:item/endshiren" }
+    }
+}

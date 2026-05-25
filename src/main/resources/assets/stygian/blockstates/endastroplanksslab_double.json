@@ -1,0 +1,5 @@
+{
+	"variants": {
+		"variant=default": { "model": "stygian:endastroplanksslab_double" }
+	}
+}

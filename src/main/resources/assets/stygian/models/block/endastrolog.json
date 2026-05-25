@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "stygian:block/endastrolog_top",
+        "side": "stygian:block/endastrolog"
+    }
+}
