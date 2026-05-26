@@ -250,9 +250,4 @@ public class EntitySkipper extends EntityMob {
 
     @Override
     protected SoundEvent getAmbientSound() { return ModSounds.skipper_idle; }
-
-    @Override
-    protected boolean canDespawn() {
-        return true;
-    }
 }
