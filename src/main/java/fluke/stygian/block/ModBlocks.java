@@ -492,6 +492,7 @@ public class ModBlocks {
 		OreDictionary.registerOre("treeLeaves", endViscousLeaves);		
 		OreDictionary.registerOre("cobblestone", endDeadCobblestone);
 		OreDictionary.registerOre("dyeBlack", endBoneMeal);
+		OreDictionary.registerOre("feather", endLunarFeather);		
 		OreDictionary.registerOre("dye", endBoneMeal);
 	}
 
