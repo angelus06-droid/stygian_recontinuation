@@ -30,6 +30,7 @@ public class BlockEndMoonshine extends BlockBush{
         super(Material.PLANTS, MapColor.WHITE_STAINED_HARDENED_CLAY);
         this.setSoundType(SoundType.PLANT);
         setTranslationKey(Reference.MOD_ID + ".endmoonshine");
+        this.setLightLevel(0.45F);        
         setRegistryName(REG_NAME);
     }
 
