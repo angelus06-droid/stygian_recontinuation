@@ -42,7 +42,7 @@ public class BlockEndDeadCoalOre extends Block {
 
     @Override
     public int quantityDropped(Random random) {
-        return 3 + random.nextInt(4);
+        return 1 + random.nextInt(3);
     }
 
     @Override
@@ -59,7 +59,7 @@ public class BlockEndDeadCoalOre extends Block {
     @Override
     public int getExpDrop(IBlockState state, IBlockAccess world, BlockPos pos, int fortune) {
         Random rand = world instanceof World ? ((World)world).rand : new Random();
-        return MathHelper.getInt(rand, 2, 4);
+        return MathHelper.getInt(rand, 1, 3);
     }
 
     @Override

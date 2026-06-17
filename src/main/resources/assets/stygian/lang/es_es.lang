@@ -68,7 +68,7 @@ tile.stygian:endacid.name=Ácido estigio
 fluid.endacid=Ácido estigio
 
 item.tile.stygian.enddoor.name=Puerta de maderadragón
-item.tile.stygian.endastrodoor.name=Puerta de maderaluna
+item.tile.stygian.endastrodoor.name=Puerta de resplandor lunar
 item.tile.stygian.endviscousdoor.name=Puerta bacteriana
 item.stygian.end_apple.name=Fruta estigia
 item.stygian.porphyry_brick.name=Ladrillo de pórfido

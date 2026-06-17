@@ -30,7 +30,7 @@ public class BlockEndBlueCactus extends Block implements IGrowable {
     public static final String REG_NAME = "endbluecactus";
     public static final PropertyInteger AGE = PropertyInteger.create("age", 0, 15);
 
-    protected static final AxisAlignedBB CACTUS_COLLISION_AABB = new AxisAlignedBB(0.0625D, 0.0D, 0.0625D, 0.9375D, 0.9375D, 0.9375D);
+    protected static final AxisAlignedBB CACTUS_COLLISION_AABB = new AxisAlignedBB(0.0625D, 0.0D, 0.0625D, 0.9375D, 1.0D, 0.9375D);
     protected static final AxisAlignedBB CACTUS_AABB = new AxisAlignedBB(0.0625D, 0.0D, 0.0625D, 0.9375D, 1.0D, 0.9375D);
 
     public BlockEndBlueCactus() {
@@ -75,6 +75,12 @@ public class BlockEndBlueCactus extends Block implements IGrowable {
     }
 
     @Override
+    @SideOnly(Side.CLIENT)
+    public AxisAlignedBB getSelectedBoundingBox(IBlockState state, World worldIn, BlockPos pos) {
+        return CACTUS_AABB.offset(pos);
+    }
+
+    @Override
     public boolean canPlaceBlockAt(World worldIn, BlockPos pos) {
         return super.canPlaceBlockAt(worldIn, pos) && this.canBlockStay(worldIn, pos);
     }
@@ -115,8 +121,8 @@ public class BlockEndBlueCactus extends Block implements IGrowable {
 
     @Override
     @SideOnly(Side.CLIENT)
-    public net.minecraft.util.BlockRenderLayer getRenderLayer() {
-        return net.minecraft.util.BlockRenderLayer.CUTOUT;
+    public BlockRenderLayer getRenderLayer() {
+        return BlockRenderLayer.CUTOUT_MIPPED;
     }
 
     @Override

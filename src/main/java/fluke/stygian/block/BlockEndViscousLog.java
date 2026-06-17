@@ -56,6 +56,39 @@ public class BlockEndViscousLog extends BlockRotatedPillar {
         return true;
     }
 
+    @Override
+    public IBlockState getStateFromMeta(int meta) {
+        EnumFacing.Axis axis = EnumFacing.Axis.Y;
+        int i = meta & 12;
+
+        if (i == 4) {
+            axis = EnumFacing.Axis.X;
+        } else if (i == 8) {
+            axis = EnumFacing.Axis.Z;
+        }
+
+        return this.getDefaultState().withProperty(AXIS, axis);
+    }
+
+    @Override
+    public int getMetaFromState(IBlockState state) {
+        int i = 0;
+        EnumFacing.Axis axis = state.getValue(AXIS);
+
+        if (axis == EnumFacing.Axis.X) {
+            i |= 4;
+        } else if (axis == EnumFacing.Axis.Z) {
+            i |= 8;
+        }
+
+        return i;
+    }
+
+    @Override
+    protected BlockStateContainer createBlockState() {
+        return new BlockStateContainer(this, new IProperty[] {AXIS});
+    }
+
     @SideOnly(Side.CLIENT)
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));

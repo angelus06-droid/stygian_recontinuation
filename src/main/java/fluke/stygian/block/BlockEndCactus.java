@@ -32,8 +32,8 @@ public class BlockEndCactus extends Block implements IGrowable
 {
     public static final String REG_NAME = "endcactus";
     public static final PropertyInteger AGE = PropertyInteger.create("age", 0, 15);
-    protected static final AxisAlignedBB CACTUS_COLLISION_AABB = new AxisAlignedBB(0.0625D, 0.0D, 0.0625D, 0.9375D, 0.9375D, 0.9375D);
-    protected static final AxisAlignedBB CACTUS_AABB = new AxisAlignedBB(0.0625D, 0.0D, 0.0625D, 0.9375D, 1.0D, 0.9375D);
+    protected static final AxisAlignedBB CACTUS_COLLISION_AABB = new AxisAlignedBB(0.1875D, 0.0D, 0.1875D, 0.8125D, 1.0D, 0.8125D);
+    protected static final AxisAlignedBB CACTUS_AABB = new AxisAlignedBB(0.1875D, 0.0D, 0.1875D, 0.8125D, 1.0D, 0.8125D);
 
     public BlockEndCactus()
     {
@@ -114,8 +114,8 @@ public class BlockEndCactus extends Block implements IGrowable
 
     @Override
     @SideOnly(Side.CLIENT)
-    public net.minecraft.util.BlockRenderLayer getRenderLayer() {
-        return net.minecraft.util.BlockRenderLayer.CUTOUT;
+    public BlockRenderLayer getRenderLayer() {
+        return BlockRenderLayer.CUTOUT_MIPPED;
     }
 
     @Override
